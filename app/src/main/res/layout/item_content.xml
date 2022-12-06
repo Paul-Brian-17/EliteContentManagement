@@ -61,7 +61,7 @@
                 android:layout_gravity="center"
                 android:layout_marginVertical="8dp"
                 android:drawableTint="@color/white"
-                android:text="View Unlocks"
+                android:text="View Content"
                 android:background="@drawable/buttons"
                 android:textAppearance="?android:textAppearanceMedium"
                 android:textColor="@android:color/white"

@@ -281,6 +281,7 @@ public class AddContentFragment extends Fragment {
         hashMap.put("category", category);
         hashMap.put("contentType", contentType);
         hashMap.put("content", contentUrl);
+        hashMap.put("notApproved", "true");
         hashMap.put("uploader", uid);
         hashMap.put("image", imageUrl);
 

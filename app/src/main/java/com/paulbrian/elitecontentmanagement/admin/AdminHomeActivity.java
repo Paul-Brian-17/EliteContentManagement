@@ -16,6 +16,7 @@ import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.paulbrian.elitecontentmanagement.MainActivity;
 import com.paulbrian.elitecontentmanagement.R;
+import com.paulbrian.elitecontentmanagement.admin.fradments.ApproveContentsFragment;
 import com.paulbrian.elitecontentmanagement.admin.fradments.ApproveCreatorsFragment;
 import com.paulbrian.elitecontentmanagement.admin.fradments.ViewContentCreatorsFragment;
 import com.paulbrian.elitecontentmanagement.admin.fradments.ViewUsersFragment;
@@ -59,6 +60,9 @@ public class AdminHomeActivity extends AppCompatActivity implements NavigationVi
 
         }else if (id == R.id.menuApproveContentCreators){
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ApproveCreatorsFragment()).commit();
+
+        }else if (id == R.id.menuApproveContents){
+            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ApproveContentsFragment()).commit();
 
         }else if (id == R.id.customer_nav_share){
             Intent share=new Intent(Intent.ACTION_SEND);

@@ -155,6 +155,9 @@ public class CategoriesFragment extends Fragment {
                 boolean anContentExists = false;
 
                 for (DataSnapshot dataSnapshotTicket: snapshot.getChildren()){
+                    if (dataSnapshotTicket.hasChild("notApproved")){
+                        continue;
+                    }
 
                     if (dataSnapshotTicket.child("category").getValue().toString().equals(category)){
 
@@ -244,6 +247,7 @@ class CategoriesFragmentAdapter extends RecyclerView.Adapter<CategoriesFragmentA
                 Intent intent = new Intent(context, ViewContentActivity.class);
                 intent.putExtra("contentUrl", contentUrl);
                 intent.putExtra("ownContent", true);
+                intent.putExtra("key", key);
 
                 context.startActivity(intent);
 

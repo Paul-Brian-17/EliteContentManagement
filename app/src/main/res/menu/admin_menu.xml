@@ -16,6 +16,10 @@
             android:icon="@drawable/ic_baseline_admin_panel_settings_24"
             android:title="Approve Creators"/>
 
+        <item android:id="@+id/menuApproveContents"
+            android:icon="@drawable/ic_baseline_admin_panel_settings_24"
+            android:title="Approve Contents"/>
+
 
 
 

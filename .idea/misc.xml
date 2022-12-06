@@ -15,12 +15,14 @@
         <entry key="app/src/main/res/layout/activity_view_content.xml" value="0.34010416666666665" />
         <entry key="app/src/main/res/layout/fragment_add_content.xml" value="0.34010416666666665" />
         <entry key="app/src/main/res/layout/fragment_approve_content_creators.xml" value="0.19322916666666667" />
+        <entry key="app/src/main/res/layout/fragment_approve_contents.xml" value="0.18802083333333333" />
         <entry key="app/src/main/res/layout/fragment_approve_creators.xml" value="0.19322916666666667" />
         <entry key="app/src/main/res/layout/fragment_categories.xml" value="0.34010416666666665" />
         <entry key="app/src/main/res/layout/fragment_my_contents.xml" value="0.34010416666666665" />
         <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.34010416666666665" />
         <entry key="app/src/main/res/layout/fragment_view_content_creators.xml" value="0.19322916666666667" />
         <entry key="app/src/main/res/layout/fragment_view_users.xml" value="0.19322916666666667" />
+        <entry key="app/src/main/res/layout/item_approve_content.xml" value="0.34010416666666665" />
         <entry key="app/src/main/res/layout/item_approve_content_creator.xml" value="0.19322916666666667" />
         <entry key="app/src/main/res/layout/item_content.xml" value="0.34010416666666665" />
         <entry key="app/src/main/res/layout/item_view_content.xml" value="0.34010416666666665" />

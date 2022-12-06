@@ -2,6 +2,7 @@ package com.paulbrian.elitecontentmanagement.user;
 
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -25,6 +26,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.paulbrian.elitecontentmanagement.R;
+import com.paulbrian.elitecontentmanagement.ViewContentActivity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -175,6 +177,7 @@ class MyContentsFragmentAdapter extends RecyclerView.Adapter<MyContentsFragmentA
         message = mData.get(position);
 
         String key = message.get("key");
+        String contentUrl = message.get("content");
         String uid = FirebaseAuth.getInstance().getUid();
 
         Glide.with(context).load(message.get("image")).into(holder.imageView);
@@ -194,7 +197,13 @@ class MyContentsFragmentAdapter extends RecyclerView.Adapter<MyContentsFragmentA
         });
 
         holder.buttonMore.setOnClickListener(v -> {
-            Toast.makeText(context, "To implement this...",Toast.LENGTH_LONG).show();
+//            Toast.makeText(context, "To implement this...",Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(context, ViewContentActivity.class);
+            intent.putExtra("contentUrl", contentUrl);
+            intent.putExtra("ownContent", true);
+            intent.putExtra("key", key);
+
+            context.startActivity(intent);
 
         });
     }
